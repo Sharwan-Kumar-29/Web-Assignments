@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 1.5%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: sticky;
+    
+    
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    font-weight: 700;
+   
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 45%;
+    align-items: center;
+    font-weight: 700;
+}
+.pp div img:only-child{
+    width:60%;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+   
+    padding: 2% 0%;
+}
+.pp{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.discount{
+    margin-top: 7px;
+    border: 1px solid orange ;
+    padding-left: 10px;
+    width: 18%;
+    color: orange;
+    border-radius: 5px;
+    margin-left: 11px;
+    font-size:12px ;
+    background-color: rgb(255, 246, 231);
+    
+}
+.price{
+    margin-top: 15%;
+    
+}
+.sub{
+    
+    width:18%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height:200px
+}
+.title{
+    padding-left: 10px;
+    font: 14px;
+    font-weight: 700;
+}
+del{
+    color: rgb(158, 158, 159);
+}
+.container3{
+    background-image: url(https://i03.appmifile.com/655_operator_in/16/09/2024/120bc81844f41422c6e5fd9656605ee6.jpg?thumb=1&w=1680&q=85);
+   height:240px;
+    border: 1px solid rgb(247, 163, 6);
+}
+.container4{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+   
+    padding: 2% 0%;
+}
+nav{
+    /* border: 1px solid red; */
+    position: sticky;
+    top:0;
+   
+    background-color: white;
+}
