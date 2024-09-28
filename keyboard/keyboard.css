@@ -1,0 +1,53 @@
+.container{
+    background-color: rgb(75,177,211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(12,106px);
+    background-color: rgb(38,42,44);
+    flex-grow: 0.9;
+    height: 50%;
+    border-radius: 15px;
+    overflow: hidden;
+    padding:2%;
+    gap:11px;
+}
+.keyboard>div{
+    background-color: rgb(45,53,56);
+    color:  rgb(75,177,211);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 5px;
+    padding:8px ;
+    
+    
+}
+*{
+    background-color:rgb(75,177,211) ;
+    font-weight: 700;
+}
+.enter{
+ 
+    grid-column: 11 /span 2;
+    
+    
+    
+}
+.shift{
+    grid-column: 11 / span 2;
+}
+#space{
+    grid-column: 5 / span 4;
+}
+.keyboard>div:hover{
+    background-color: rgb(10, 253, 253);
+    cursor: pointer;
+}
