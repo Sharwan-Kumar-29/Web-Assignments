@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left {
+        grid-area: left;
+        background-color: blue;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left img {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        /* margin: auto */
+    }
+
+    .right {
+        grid-area: right;
+        width: 60%;
+        background-color: rgb(49, 49, 198);
+        color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .right ul li {
+        list-style: none;
+        margin: 20px 0;
+    }
+
+    h4 {
+        text-align: center;
+        margin-left: -50px;
+
+        font-size: 20px;
+    }
+
+    section+div {
+        background-color: rgb(28, 28, 33);
+        color: white;
+        display: flex;
+        grid-area: footer;
+        justify-content: space-between;
+    }
+
+    section+div ul li {
+        display: inline;
+        margin: 10px;
+        padding: 0 20px;
+    }
+
+
+
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+        section {
+            display: grid;
+            grid-template-areas:
+                "right"
+                "left"
+                "footer";
+            overflow-x: hidden;
+        }
+
+        .right {
+            width: 100vw;
+        }
+
+        .left {
+            width: 100%;
+        }
+
+        section+div {
+            background-color: rgb(28, 28, 33);
+            color: white;
+        }
+
+        section+div div:first-child {
+            display: none;
+        }
+
+        ul li {
+            margin: auto;
+            padding: auto;
+        }
+    }
+
+
+    @media only screen and (max-width: 480px) {
+
+        section {
+            display: grid;
+            grid-template-areas:
+            "footer"
+            "right"
+            "left";
+        }
+
+        .right ul li {
+            display: none;
+        }
+
+        h4 {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .right {
+            width: 100vw;
+            display: block;
+        }
+
+        .left {
+            width: 100vw;
+        }
+
+        section+div div:first-child {
+            display: none;
+        }
+
+        ul li {
+            margin: 0 1px;
+            padding: 0 1px;
+
+        }
+    }
+</style>
+
+<body>
+
+    <section>
+
+        <div class="left">
+            <div>
+                <img src="https://play-lh.googleusercontent.com/DTzWtkxfnKwFO3ruybY1SKjJQnLYeuK3KmQmwV5OQ3dULr5iXxeEtzBLceultrKTIUTr"
+                    alt="">
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <h4>Shop</h4>
+                <ul>
+                    <li>Git Card</li>
+                    <li>Etsy Registry</li>
+                    <li>Sitmap</li>
+                    <li>Etsy Blog</li>
+                    <li>Etsy United Kingdom</li>
+                    <li>Etsy Garmany</li>
+                    <li>Etsy Canada </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Sell</h4>
+                <ul>
+                    <li>Git Card</li>
+                    <li>Etsy Registry</li>
+                    <li>Sitmap</li>
+                    <li>Etsy Blog</li>
+
+                </ul>
+            </div>
+            <div>
+                <h4>About</h4>
+                <ul>
+                    <li>Git Card</li>
+                    <li>Etsy Registry</li>
+                    <li>Sitmap</li>
+                    <li>Etsy Blog</li>
+                    <li>Etsy United Kingdom</li>
+                    <li>Etsy Garmany</li>
+                    <li>Etsy Canada </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Shop</h4>
+                <ul>
+                    <li>Git Card</li>
+                    <li>Etsy Registry</li>
+                    <li>Sitmap</li>
+                    <li>Etsy Blog</li>
+                    <li>Etsy United Kingdom</li>
+                    <li>Etsy Garmany</li>
+                    <li>Etsy Canada </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <div>
+        <div>
+            <ul>
+                <li>India</li>
+                <li>English (en)</li>
+                <li>$(INR)</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>@ 2024 Etsy. Inc.</li>
+                <li>Terms of use</li>
+                <li>Privacy</li>
+                <li>Intrested Based ads</li>
+                <li>Local Shops</li>
+                <li>Regions</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

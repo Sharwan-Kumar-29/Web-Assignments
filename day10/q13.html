@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* body {
+        margin: 0;
+        padding: 0;
+    } */
+
+    nav {
+        grid-area: nav;
+        background-color: purple;
+        height: 150px;
+    }
+
+    .left {
+        position: fixed;
+        left: 0;
+        width: 20%;
+        grid-area: left;    
+        height: 300px;
+    }
+    p{
+        background-color: aqua;
+        height: 50px;
+        margin: 10px;
+        width: 100%;
+
+    }
+    .right {
+        margin: 10px;
+        grid-area: right;
+        background-color: aqua;
+        height: 400px;
+        width: 20%;
+        position: fixed;
+        right: 0;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: aqua;
+        height: 100px;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+    }
+    @media all and (max-width:481px) {
+        body{
+            display: grid;
+            grid-template-areas: 
+            "nav"
+            "left"
+            "right"
+            "footer";
+        }
+        nav{
+            height: 100px;
+        }
+        .right{
+            position: fixed;
+            bottom: 110px;
+            width:94%;
+            height: 70px;
+            margin-left: 100px;
+        }
+        .left{
+            width: 97%;
+            position: static;
+        }
+        p{
+            width: 98%;
+            
+            height: 20px;
+        }
+        footer{
+            width: 97%;
+            bottom: 10px;
+        }
+    }
+</style>
+
+<body>
+    <nav></nav>
+    <div class="left">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <div class="right"></div>
+    <footer></footer>
+</body>
+
+</html>
